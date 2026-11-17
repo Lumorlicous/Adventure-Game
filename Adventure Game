@@ -1,0 +1,34 @@
+## You are working in a Coffee Shop, First Day Intro 
+player = {}
+print("Hi New Worker, I'm a your Boss you could call be Boss, Because I'm your Boss.")
+print("Mind telling me your name ?")
+name: str = input('Type a Name:')
+#Funtions Orders
+#Boss's order
+def tutorial():
+    print ('I want a Chocolate Caramel Latte you, Just pull the lever once.')
+    print ('Click the levers according the Order 1 of Chocolate ')
+    choco: int =  int(input('How much Chocolate ? - '))
+    while choco == 0 or choco > 1:
+      choco = 0
+      print ('Darn lets try again')
+      choco: int =  int(input('How much Chocolate ? - '))
+    print ('Good')
+    
+
+#Name Intro, this will set the setting
+if name == '':
+    name = 'noob'
+    print ('Will since you said nothing Im just gonna call you ' + name + '.')
+else :
+  print('Hi ' + name)
+
+print ("alright " + name +" So here's whats gonna happen I need you to settle out the front Counter.")
+print ('Then I am gonna have ya work the coffee station, Yet I aint gonna let it slide if ya mess up...')
+print ('I say Three times alright.')
+print ('Alright let head over to there')
+print ('')
+print ('** You walk up to a counter that seems well cleaned with three different levers. having three Flavors **')
+print ('Alright heres the thing, these are producers of flavors of syrups 1 is chocolate, 2 is caramel, 3 is vanilla.')
+print ('Simple ya ? good well lets make a drink')
+tutorial()
