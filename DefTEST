@@ -1,1 +1,28 @@
+import random
+# Varables 
+flavor: int = 0
+ans: int = 0
+
+#Costumer, Order
+def costumer(x,y):
+
+ x: int = random.randint(1,3)
+
+ if x == 1:
+    print ('Hi could I have a Mocha Latte ?')
+ elif x == 2:
+    print ("Hi could I have a Caremal Coffee ?")
+ elif x == 3:
+    print ('Hi could I have a Vanilla ice coffee ?')
+
+ y: int = input ("What Numbered Lever is it ? - ")
+
+## Check to see if the user == order.
+## ADD A RETURN A MINUS
+ if y == x:
+    print ('Thanks (:>)')
+ else:
+    print ('Oh')
+
+costumer(flavor,ans)
 
